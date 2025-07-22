@@ -1,0 +1,122 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+.full-width{
+    max-width: 1000px;
+    margin: auto;
+
+}
+.btn{
+    border-radius: 15px;
+    background: rgb(221, 0, 0);
+    width: 187px;
+    height: 56px;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+.banner-container{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    border-radius: 15px;
+}
+.banner-left{
+    width: 40%;
+    color: white;
+    padding-left: 40px;
+}
+.banner-right{
+    width: 40%;
+  padding-right: 1.25rem;
+   
+    
+}
+.banner-right img{
+    width: 100%;
+    display: block;
+    padding-top: 10px;
+}
+.upcoming-container{
+    display: flex;
+   justify-content: space-between;
+   
+    gap: 40px;
+}
+.upcoming-left {
+    background: black;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    height: fit-content;
+}
+.upcoming-right img{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 10px;
+   
+}
+.upcoming-left .btn{
+    gap: 10px;
+}
+
+.upcoming-right-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 75%;
+    margin-top: 50px;
+    gap: 20px;
+  
+
+
+}
+.upcoming-right{
+      border: 1px solid rgb(211, 206, 206);
+}
+
+@media screen and (max-width:576px) {
+   .banner-container{
+        flex-direction: column;
+    }
+    .banner-left{
+        padding: 0;
+    }
+    .banner-right{
+        margin-top: 15px;
+    }
+    .upcoming-container{
+        flex-direction: column;
+    }
+    .upcoming-right-container{
+        grid-template-columns: repeat(1,1fr);
+        margin-left: 65px;
+    }
+    .upcoming-left{
+        margin-left: 195px;
+        background: none;
+    }
+    
+    
+}
+@media screen and (min-width:577px) and (max-width:768px) {
+    .upcoming-container{
+       flex-direction:column ;
+    }
+  .upcoming-right-container{
+    grid-template-columns: repeat(2,1fr);
+    margin-left: 70px;
+  }
+
+  .upcoming-left {
+    flex-direction: row;
+    width: 100%;
+  }
+}
